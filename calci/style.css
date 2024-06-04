@@ -1,0 +1,73 @@
+body {
+    margin: 0;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: hsl(0, 0%, 95%);
+    background: linear-gradient(to right, #1c1c15, #1c1c1a);
+    background-image:url('darky.jpg') ;
+}
+
+#calculator {
+    font-family: Arial, sans-serif;
+    background-color: hsl(0, 0%, 15%);
+    border-radius: 15px;
+    max-width: 300px; 
+    overflow: hidden;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+    box-shadow:
+    0 0 20px rgb(10, 181, 177),
+    0 0 9px rgb(55, 181, 177), 0 0 50px rgb(55, 181, 177);
+}
+
+#display {
+    width: 100%;
+    padding: 10px; 
+    font-size: 3rem; 
+    text-align: left;
+    border: none;
+    background-color: hsl(0, 0%, 20%);
+    color: white;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+#keys {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px; 
+    padding: 10px;
+}
+
+button {
+    width: 50px; 
+    height: 50px; 
+    border-radius: 20px; 
+    border: none;
+    background-color: rgb(79, 80, 79);
+    color: white;
+    font-size: 1.5rem; 
+    font-weight: bold;
+    cursor: pointer;
+    backdrop-filter: blur(5px);
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+}
+
+button:hover {
+    background-color: hsl(0, 0%, 40%);
+    box-shadow: 0 2px 8px rgba(107, 107, 101, 0.899);
+}
+
+button:active {
+    background-color: hsl(0, 0%, 50%);
+}
+
+.operator-btn {
+    background-color: hsl(199, 79%, 62%);
+    box-shadow: 0px 0px 8px rgba(239, 239, 236, 0.899);
+}
+
+.operator-btn:hover {
+    background-color: hsl(231, 34%, 80%);
+}
